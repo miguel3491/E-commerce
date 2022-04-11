@@ -1,0 +1,59 @@
+[
+    {
+      "id": "t-shirt",
+      "name": "T-Shirt",
+      "price": 35.0,
+      "imageUrl": "https://www.datocms-assets.com/56262/1633338865-shirt.jpg",
+      "description": "A white t-shirt"
+      
+    },
+    {
+      "id": "wallet",
+      "name": "Wallet",
+      "price": 20.0,
+      "imageUrl": "https://www.datocms-assets.com/56262/1633338869-fancy-wallet.jpg",
+      "description": "A fancy wallet"
+      
+    },
+    {
+      "id": "cup",
+      "name": "Cup",
+      "price": 5.0,
+      "imageUrl": "https://www.datocms-assets.com/56262/1633338802-cup.jpg",
+      "description": "A tea cup"
+      
+    },
+    {
+        "id": "cup",
+        "name": "ExtraCup",
+        "price": 25.0,
+        "imageUrl": "https://www.datocms-assets.com/56262/1633338802-cup.jpg",
+        "description": "A tea cup"
+        
+    },
+    {
+      "id": "PC",
+      "name": "Skytech Gaming Blaze 3.0 ",
+      "price": 1200.0,
+      "imageUrl": "https://media.gamestop.com/i/gamestop/11158594/Skytech-Gaming-Blaze-3.0-Gaming-PC-GeForce-RTX-3080-GPU-AMD-Ryzen-7-3700X-CPU-16GB-RAM-1TB-SSD?$plp-tile$&fmt=webp",
+      "description": "GeForce RTX 3080 GPU AMD Ryzen 7 3700X CPU 16GB RAM 1TB SSD"
+      
+    },
+    {
+      "id": "cup",
+      "name": "ExtraCup",
+      "price": 25.0,
+      "imageUrl": "https://www.datocms-assets.com/56262/1633338802-cup.jpg",
+      "description": "A tea cup"
+      
+    },
+    {
+      "id": "cup",
+      "name": "ExtraCup",
+      "price": 25.0,
+      "imageUrl": "https://www.datocms-assets.com/56262/1633338802-cup.jpg",
+      "description": "A tea cup"
+      
+    }
+
+]

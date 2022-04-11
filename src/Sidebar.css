@@ -1,0 +1,132 @@
+/* https://www.digitalocean.com/community/tutorials/react-react-burger-menu-sidebar */ 
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .bm-burger-button {
+      position: relative;
+      width: 30px;
+      height: 25px;
+      left: 10px;
+      top: 0px;
+    }
+}
+
+a{
+  color:rgb(0, 0, 0);
+}
+
+a:hover{
+  color: #ff593d;
+}
+.my-menu{
+  overflow: hidden;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    left: 120px;
+    top: 0px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #ff593d;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+  }
+  .bm-cross-button:hover{
+    color: #fff;
+  }
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    overflow-y: hidden !important;
+    top: 0;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #fff;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #000;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    color: #000;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+
+  /* Styling of overlay */
+  .bm-overlay {
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+/* Sidebar Section */
+.siderbar{
+  display: absolute;
+  margin-right: 100px;
+  text-align: left;
+  padding-left: 2%;
+  margin-top: 1.5rem;
+}
+
+.hamburger-bt{
+  color:rgb(0, 0, 0);
+}
+
+/* Footer Section */
+
+.menu-footer{
+  margin-top: 1.5rem;
+}
+
+.SM-footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 29px;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  padding-left: 0%;
+}
+
