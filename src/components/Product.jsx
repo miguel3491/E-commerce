@@ -1,25 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 
 function Product(props){
     const {id, name, price, imageUrl, description} = props;
 
-    const [descriptions, setDescriptions] = useState(description)
-
-    function refreshPage(){
-        setTimeout(()=>{
-            window.location.reload(false);
-        }, 100);
-    }
-
     return(
         <div className="product" key = {id}>
             <img className="image-product" src = {imageUrl} alt = {`image of ${name}`}></img>
             <h3>{name}</h3>
-            <p>{descriptions}</p>
+            <p>{description}</p>
             <span>${price}</span>
-            <div>
-                <button onClick={refreshPage} className="snipcart-add-item AdjustSize" 
+            <div className="Product-center">
+                <button className="snipcart-add-item AdjustSize" 
                 data-item-id = {id}
                 data-item-image = {imageUrl}
                 data-item-name = {name}
@@ -33,3 +25,5 @@ function Product(props){
 }
 
 export default Product;
+
+// {`${source.description.substring(0, 40)}...`} 

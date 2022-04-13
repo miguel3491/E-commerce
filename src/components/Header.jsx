@@ -20,7 +20,7 @@ return(
      <div>
         <div id = "header">
             <div className="Tittle-page">
-            <h2>Find your style</h2>
+            <h2>Much Stock, Vast Stow</h2>
             <ThemeProvider theme = {theme}>
             <LoadingButton 
             href = "/content"

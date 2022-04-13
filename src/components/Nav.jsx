@@ -1,23 +1,31 @@
 import React, {useState} from "react";
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Header from "./Header";
+import Shop from "./Shop"
+import products from "../assets/products.json"
 import { slide as Menu } from 'react-burger-menu';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Tooltip from '@mui/material/Tooltip';
 import LoginIcon from '@mui/icons-material/Login';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
-import Shop from "./Shop"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
 import "../Sidebar.css"
 
-function Nav(){
+function Nav(props){
     const [navbarOpen, setNavbarOpen] = useState(false)
 
     function handleToggle(){
         setNavbarOpen(prev => !prev) // updating the state using the updater function.
+    }
+
+    function refreshPage(){
+        setTimeout(()=>{
+            window.location.reload(false);
+        }, 100);
     }
     
     return(
@@ -36,7 +44,9 @@ function Nav(){
             </ul>
             <footer className="menu-footer">
                 <h3>About us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
                 <ul className="SM-footer">
                     <a href="https://twitter.com/">
                     <li><FontAwesomeIcon icon={faTwitter}/></li></a>
@@ -54,7 +64,10 @@ function Nav(){
                     <Link className="menu-item" to= "/"><Tooltip title = "Home"><HomeOutlinedIcon></HomeOutlinedIcon></Tooltip></Link>
                 </li>
                 <li className="Links">
-                    <Link className="menu-item" to="/content"><Tooltip title = "Shop"><ShoppingBagOutlinedIcon></ShoppingBagOutlinedIcon></Tooltip></Link>
+                    <Link onClick={refreshPage} className="menu-item" to="/content"><Tooltip title = "Shop"><ShoppingBagOutlinedIcon></ShoppingBagOutlinedIcon></Tooltip></Link>
+                </li>
+                <li className="Links">
+                    <Link onClick={refreshPage} className="menu-item" to= "/content#/cart"><Tooltip title = "Cart"><ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon></Tooltip></Link>  
                 </li>
                 <li className="menu-item">
                     <Tooltip title = "Login"><LoginIcon></LoginIcon></Tooltip>

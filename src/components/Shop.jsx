@@ -5,15 +5,15 @@ import {slice, concat} from 'lodash';
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import InputAdornment from '@mui/material/InputAdornment';
+import Button from '@mui/material/Button';
 
 
-function Shop(){
+function Shop(props){
+    const [items, setItems] = useState(products); // Display array from products.json.
+    const [searchInput, setSearchInput] = useState(""); // Search bar.
+    const [filter, setFilter] = useState([]); // Filter Function. 
 
-    const [items, setItems] = useState(products); // Display array from products.json
-    const [searchInput, setSearchInput] = useState(""); // Search bar
-    const [filter, setFilter] = useState([]); // Filter Function 
-
-    const [list, setList] = useState(slice(products, 0, 6))
+    const [list, setList] = useState(slice(items, 0, 6)) // Set the limit to 6 before clicking the button.
     const [index, setIndex] = useState(6);
     const [showMore, setShowMore] = useState(true);
 
@@ -28,7 +28,7 @@ function Shop(){
     const showItems = () => {
        const newIndex = index + 10;
        const newShowMore = newIndex < (50 - 1);
-       const newList = concat(list, slice(products, index, newIndex));
+       const newList = concat(list, slice(items, index, newIndex));
        setIndex(newIndex);
        setList(newList);
        setShowMore(newShowMore);
@@ -37,7 +37,7 @@ function Shop(){
     return(
         <div>
             <div className="Portrait-shop">
-                <h2>Basic</h2>
+                <h2>Main Content</h2>
             </div>
             <div className="Search-bar">
                       <TextField onChange={(e) => searchItems(e.target.value)} placeholder="Search" variant = "standard" InputProps = {{startAdornment: (
@@ -53,11 +53,18 @@ function Shop(){
                         ))
                     ) :
                     list.map((source, i) => (  
-                        <Product {...source} key = {i}></Product>
+                        <Product 
+                        id = {source.id} 
+                        name = {source.name} 
+                        price = {source.price} 
+                        imageUrl = {source.imageUrl} 
+                        description = {`${source.description.substring(0, 40)}...`} 
+                        key = {i}>
+                        </Product>
                     ))}
             </div>
-                <div>
-                    {showMore && <button onClick={showItems}>Load More</button>}
+                <div className="Add-more">
+                    {showMore && <Button variant = "contained" onClick={showItems}>Load More</Button>}
                 </div>
                 <div className="cart-overlay"
                 id = "snipcart"

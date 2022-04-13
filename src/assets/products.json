@@ -1,6 +1,6 @@
 [
     {
-      "id": "t-shirt",
+      "id": "1",
       "name": "T-Shirt",
       "price": 35.0,
       "imageUrl": "https://www.datocms-assets.com/56262/1633338865-shirt.jpg",
@@ -8,7 +8,7 @@
       
     },
     {
-      "id": "wallet",
+      "id": "2",
       "name": "Wallet",
       "price": 20.0,
       "imageUrl": "https://www.datocms-assets.com/56262/1633338869-fancy-wallet.jpg",
@@ -16,7 +16,7 @@
       
     },
     {
-      "id": "cup",
+      "id": "3",
       "name": "Cup",
       "price": 5.0,
       "imageUrl": "https://www.datocms-assets.com/56262/1633338802-cup.jpg",
@@ -24,36 +24,51 @@
       
     },
     {
-        "id": "cup",
-        "name": "ExtraCup",
-        "price": 25.0,
-        "imageUrl": "https://www.datocms-assets.com/56262/1633338802-cup.jpg",
-        "description": "A tea cup"
+      "id": "4",
+      "name": "RazerBlade 13 Gaming Laptop",
+      "price": 600.0,
+      "imageUrl": "https://media.gamestop.com/i/gamestop/11147935/RazerBlade-13-GeForce-GTX-1650-Ti-11th-Gen-Intel-Core-i7-FHD-120Hz-Display-16GB-RAM-512GB-SSD?$pdp2x$",
+      "description": "NVIDIA® GeForce® GTX 1650 Ti 4GB VRAM graphics, Quad-Core 11th Gen Intel&reg; Core&trade; i7-1165G7 Processor, and 16GB dual-channel memory."
         
     },
     {
-      "id": "PC",
-      "name": "Skytech Gaming Blaze 3.0 ",
+      "id": "5",
+      "name": "Skytech Gaming Blaze 3.0 Gaming PC Desktop ",
       "price": 1200.0,
       "imageUrl": "https://media.gamestop.com/i/gamestop/11158594/Skytech-Gaming-Blaze-3.0-Gaming-PC-GeForce-RTX-3080-GPU-AMD-Ryzen-7-3700X-CPU-16GB-RAM-1TB-SSD?$plp-tile$&fmt=webp",
       "description": "GeForce RTX 3080 GPU AMD Ryzen 7 3700X CPU 16GB RAM 1TB SSD"
       
     },
     {
-      "id": "cup",
-      "name": "ExtraCup",
-      "price": 25.0,
-      "imageUrl": "https://www.datocms-assets.com/56262/1633338802-cup.jpg",
-      "description": "A tea cup"
+      "id": "6",
+      "name": "Loungefly MLB Boston Red Sox Mini",
+      "price": 29.0,
+      "imageUrl": "https://media.gamestop.com/i/gamestop/11183434/Loungefly-MLB-Boston-Red-Sox-Mini-Backpack?$pdp2x$",
+      "description": "If you’re a Red Sox fan and you don’t sport a wicked cool Red Sox mini backpack"
       
     },
     {
-      "id": "cup",
-      "name": "ExtraCup",
+      "id": "7",
+      "name": "Xbox Series X Wireless Controller",
+      "price": 65.0,
+      "imageUrl": "https://media.gamestop.com/i/gamestop/11108955/Microsoft-Xbox-Series-X-Wireless-Controller-Shock-Blue?$pdp2x$",
+      "description": "Experience the modernized design of the Xbox Wireless Controller in Shock Blue, featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay with battery usage up to 40 hours."
+      
+    },
+    {
+      "id": "8",
+      "name": "Loungefly MLB Chicago Cubs",
       "price": 25.0,
-      "imageUrl": "https://www.datocms-assets.com/56262/1633338802-cup.jpg",
-      "description": "A tea cup"
+      "imageUrl": "https://media.gamestop.com/i/gamestop/11183430/Loungefly-MLB-Chicago-Cubs-Mini-Backpack?$pdp$$&fmt=webp",
+      "description": "Now you can walk the walk with this Loungefly MLB Chicago Cubs Mini Backpack."
+      
+    },
+    {
+      "id": "9",
+      "name": "Captain America Flex Fit Baseball Hat",
+      "price": 25.0,
+      "imageUrl": "https://media.gamestop.com/i/gamestop/10166285/Captain-America-Flex-Fit-Baseball-Hat?$pdp2x$",
+      "description": "Bring The First Avenger home in the form of this baseball cap."
       
     }
-
 ]
