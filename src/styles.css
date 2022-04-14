@@ -225,13 +225,20 @@ h2{
 }
 
 .Portrait-shop{
-    height: 250px;
+    height: 220px;
     width: 100%;
     padding-top: 3%;
+    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-image: url("https://wallpaperaccess.com/full/4625709.jpg");
+    background-position: center 3px;
+    background-image: url("https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?cs=srgb&dl=pexels-ovan-62689.jpg&fm=jpg");
+}
+
+.Portrait-text{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
 }
 
 .Search-bar{

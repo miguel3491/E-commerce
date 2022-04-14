@@ -37,7 +37,8 @@ function Shop(props){
     return(
         <div>
             <div className="Portrait-shop">
-                <h2>Main Content</h2>
+                <h2 className="Portrait-text">Main Content</h2>
+                <p className="Portrait-text">Home / Main Content</p>
             </div>
             <div className="Search-bar">
                       <TextField onChange={(e) => searchItems(e.target.value)} placeholder="Search" variant = "standard" InputProps = {{startAdornment: (
@@ -64,7 +65,7 @@ function Shop(props){
                     ))}
             </div>
                 <div className="Add-more">
-                    {showMore && <Button variant = "contained" onClick={showItems}>Load More</Button>}
+                    {showMore && <Button style = {{width: "25%"}} variant = "contained" onClick={showItems}>Load More</Button>}
                 </div>
                 <div className="cart-overlay"
                 id = "snipcart"
