@@ -37,5 +37,3 @@ return(
 
 export default Header;
 
-// React Router: https://v5.reactrouter.com/web/example/basic
-// custom-link: https://v5.reactrouter.com/web/example/custom-link  !Read Tomorrow to solve the same content between "/" and "/content"

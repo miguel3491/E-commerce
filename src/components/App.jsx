@@ -17,5 +17,3 @@ function App(){
 export default App;
 
 
-// inspiration: https://lezada.jamstacktemplates.dev/home/lookbook
-// Tutorial: https://www.datocms.com/blog/react-ecommerce-tutorial

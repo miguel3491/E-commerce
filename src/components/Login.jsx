@@ -67,5 +67,3 @@ function Login(props){
 
 export default Login;
 
-// https://www.cluemediator.com/login-app-create-login-form-in-reactjs-using-secure-rest-api // Inspiration source
-// https://carsalcedo.github.io/Dangos/#

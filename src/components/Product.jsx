@@ -26,4 +26,3 @@ function Product(props){
 
 export default Product;
 
-// {`${source.description.substring(0, 40)}...`} 

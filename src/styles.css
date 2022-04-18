@@ -220,7 +220,7 @@ h2{
     padding-top: 3%;
     justify-content: space-evenly;
     max-width: 900px;
-    padding-left: 25%;
+    margin-left: 26%;
     flex-wrap: wrap;
 }
 
@@ -252,4 +252,90 @@ h2{
     padding-bottom: 2%;
     display: flex;
     justify-content: center;
+}
+
+#Copyright-claim{
+    position: relative;
+    top: 435px;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    /* Header Section */
+    h2{
+        font-size: 40px;
+        line-height: 30px;
+        font-family: Libre Franklin,sans-serif;
+        text-transform: capitalize;
+        color: #242424;
+    }
+    #header{
+        position: fixed;
+        height: 850px;
+        width: 145%;
+        text-align: center;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://lezada.jamstacktemplates.dev/assets/images/backgrounds/bg-parallax-4.jpg");
+        background-position: right;
+    }
+
+    #Tittle-name{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.3rem;
+        width: 48%;
+    }
+    .Tittle-page{
+        display: relative;
+        width: 70%;
+        margin-top: 150px;
+        margin-left: 0.1rem;
+        animation: bounce-in-top .9s ease-in 0.8s backwards;
+    }
+
+    /* Products Section */
+.product {
+    margin: 1%;
+    padding: 15px;
+    border: 1px solid lightgray;
+    width: 45%;
+    border-radius: 3px; 
+}
+.AdjustSize{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    font-weight: 600;
+    gap: 0.5rem;
+}
+.grid {
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-evenly;
+    max-width: 850px;
+    margin-left: 0%;
+    flex-wrap: wrap;
+}
+.Portrait-shop{
+    height: 220px;
+    width: 100%;
+    padding-top: 3%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?cs=srgb&dl=pexels-ovan-62689.jpg&fm=jpg");
+}
+.Portrait-text{
+    position: relative;
+    padding-top: 5%;
+    text-shadow: 2px 2px 3px #000000;
+    line-height: 9px;
+    font-weight: 600;
+    color: #fff;
+}
 }

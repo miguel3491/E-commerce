@@ -31,7 +31,7 @@ function Nav(props){
         })
     }, []);
 
-    function refreshPage(){
+    const refreshPage = () =>{
         setTimeout(()=>{
             window.location.reload(false);
         }, 100);
@@ -39,9 +39,9 @@ function Nav(props){
     
     return(
     <Router>
-        <div>
+    <div>
     <nav className="nav-wrap">
-        <Menu width={ '20%' }>
+        <Menu ClassName={"my-menu"} width={ '25%' }>
             <footer className="menu-footer">
                 <h3>About us</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -56,9 +56,9 @@ function Nav(props){
                     <a href= "https://www.instagram.com/">
                     <li id = "instagram-icon"><FontAwesomeIcon icon={faInstagram}/></li></a>
                 </ul>
+                <p id = "Copyright-claim">© Copyright 2022 Miguel Cano</p>
             </footer>
         </Menu>
-        {/* <button className="nav-button" onClick={handleToggle}>{navbarOpen ? "Close": "Open"}</button> */}
         <h1 id = "Tittle-name">E-Commerce</h1>
             <ul className= "link-right" >
                 <li className="Links">
@@ -76,11 +76,11 @@ function Nav(props){
             </ul> 
     </nav>
         </div>
-        <Routes>
-                <Route path = '/' element = {<Header></Header>}></Route>
-                <Route exact path = "/content" element = {<Shop></Shop>}></Route>
-                <Route exact path = "/login" element = {<Login></Login>}></Route>
-        </Routes> 
+            <Routes>
+                    <Route path = '/' element = {<Header></Header>}></Route>
+                    <Route exact path = "/content" element = {<Shop></Shop>}></Route>
+                    <Route exact path = "/login" element = {<Login></Login>}></Route>
+            </Routes> 
     </Router>
     )
 }
