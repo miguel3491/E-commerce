@@ -68,9 +68,10 @@ function Shop(props){
                     {showMore && <Button style = {{width: "25%"}} variant = "contained" onClick={showItems}>Load More</Button>}
                 </div>
                 <div className="cart-overlay"
-                id = "snipcart"
+                hidden id = "snipcart"
                 data-api-key = "ZWNlMzk4NDUtMTc4NS00ZmMzLThjYTEtNmVmYjgwNmNkYTZhNjM3ODQwOTMyMjIzODUyODM5"
-                hidden> 
+                data-config-modal-style="side"
+                > 
             </div>
         </div>    
     )
